@@ -16,3 +16,17 @@ Run the following command to create a virtual environment:
 
 ```bash
 python3.10 -m venv venv
+```
+
+### 2.Install the dependencies using pip
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+Run the script to start the camera detection process:
+
+```bash
+python main.py
+```
