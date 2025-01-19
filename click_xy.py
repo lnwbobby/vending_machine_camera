@@ -18,7 +18,8 @@ subtype = '0'
 rtsp_url = f"rtsp://{username}:{password}@{camera_ip}:{port}/cam/realmonitor?channel={channel}&subtype={subtype}"
 # Check if the video stream is opened successfully
 # cap = cv2.VideoCapture('video/video_20240913_171528.avi')
-cap = cv2.VideoCapture(rtsp_url)
+# cap = cv2.VideoCapture(0) # For Normal Camera
+cap = cv2.VideoCapture(rtsp_url) # For RTSP Camera
 print(rtsp_url)
 if not cap.isOpened():
     print("Error: Could not open video stream.")
