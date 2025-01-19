@@ -22,11 +22,3 @@ python3.10 -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
-
-## Usage
-
-Run the script to start the camera detection process:
-
-```bash
-python main.py
-```
